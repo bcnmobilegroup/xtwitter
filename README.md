@@ -2,7 +2,7 @@
 
 XTwitter es un cliente Twitter muy básico implementado en [Xamarin.Forms], y que servió como demo para el primer [Meetup] del grupo [Barcelona Mobile .NET Developers Group].
 
-![Alt text](/_screenshots/XTwitter1.png?raw=true "Optional Title")![Alt text](/_screenshots/XTwitter2.png?raw=true "Optional Title")![Alt text](/_screenshots/XTwitter3.png?raw=true "Optional Title")
+![XTwitterTimeline](/_screenshots/XTwitter1.png?raw=true "Timeline") ![XTwiiterTweetView](/_screenshots/XTwitter2.png?raw=true "Tweet view") ![XTwitterSendTweet](/_screenshots/XTwitter3.png?raw=true "Send Tweet View")
 
 # Funcionalidades
 

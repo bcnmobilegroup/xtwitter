@@ -1,36 +1,34 @@
-# Code Kata Manifesto 
+# XTwitter
 
-A code kata poses a problem for you to be solved - challenging your programming abilities, problem solving skills, creativity and discipline. But the final solution is only one part of the exercise... 
+XTwitter is a basic Twitter client implemented in Xamarin.Forms, and it has served as a demo for the first [Meetup] of [Barcelona Mobile .NET Developers Group].
 
-## List of Code Katas
+![XTwitterTimeline](/_screenshots/XTwitter1.png?raw=true "Timeline") ![XTwiiterTweetView](/_screenshots/XTwitter2.png?raw=true "Tweet view") ![XTwitterSendTweet](/_screenshots/XTwitter3.png?raw=true "Send Tweet View")
 
-###Beginner (Yellow Belt) Use your fundamental programming skills  
+# Features
 
-* Fizz Buzz - Win this drinking game - ironically it's also a classic task in interviews for a programming job. Cheers!  
-* The Tea Party - Welcome the various guests of your exclusive tea party in heaven correctly  
-* NASA Countdown - Do you have what it takes to handle the most important job of all at NASA? -The Countdown!  
-* Fibonacci Killer - Rescue lives by applying a hundreds of years old algorithm  
-* Backwards Talk - Decipher your kids' secret language  
-* Cough Syrup GCD - Mix your own cough syrup with the help of the Greatest Common Divisor  
+The demo allows:
 
-###Beginner++ (Orange Belt) Combine fundamental programming skills  
+- To load the last 40 tweets from the timeline of the connected user.
+- To visualize the detail of a tweet.
+- To make a tweet and the possibility of adding an image to it.
+    
+# Configuration
+Before launching XTwitter, it is necessary to modify the API Keys in other to load the timeline of a specific user, and being ablle to make tweet in its name. These keys are referenced in the **TwitterApiData.cs**, located in the **XTwitter.Forms** project.
 
-* Caesar plays Lottery - You are a Roman in the 21st century and played the lottery - but do you win?  
-* The Cube - You are trapped in a cube and only prime numbers help you to get out of it alive  
-* Movie Tickets - Build an algorithm to apply the complex rules for movie ticket prices  
-* Books for Mars - Use ISBN to satisfy an alien's interest for human nature  
-* Train Chaos - Use you railway siding as a stack to regain order  
-* Happy Numbers - You want to be happy for once - be a happy number!  
+```C#
+public const string TWITTER_ACCESS_TOKEN = "EDIT";
+public const string TWITTER_ACCESS_TOKEN_SECRET = "EDIT";
+public const string TWITTER_CONSUMER_KEY = "EDIT";
+public const string TWITTER_CONSUMER_SECRET = "EDIT";
+```
 
-###Intermediate (Green Belt) Handle nontrivial algorithms  
+In other to get these keys it is necessary:
 
-* CD Sorting - Bring a CD collection in the right order or somebody will be mad...  
-* URL Rewrite - You got a new job: Rewriting URLs!  
-* Roman Roulette - It's not Russian roulette but just as deadly - yet you can survive: With math!  
-* Towers of Hanoi - Life as a monk in Hanoi is dull - solve this puzzle to have some fun  
+- To create an app in the [Twitter Application Manager].
+- To go to **Key and Access Tokens**.
+- In this section, you can find and generate the necessary keys.
 
-###Advanced (Blue Belt) Proof your creativity  
-
-* Friday the 13th - Find a few of those unlucky days in order to travel through time  
-* Movie Titles - Become a human incarnation of the Internet Movie Database  
-
+[Xamarin.Forms]:http://xamarin.com/forms
+[Meetup]:http://www.meetup.com/Barcelona-Mobile-NET-Developers-Group/
+[Barcelona Mobile .NET Developers Group]:http://bcnmobilegroup.azurewebsites.net/
+[Twitter Application Manager]:https://apps.twitter.com/
